@@ -8,6 +8,6 @@ describe('the places path' , {:type => :feature}) do
     visit('/')
     fill_in('place_name', :with => 'Oregon Coast')
     click_button('Add Place')
-    expect(page).to have_content()
+    expect(page).to have_content("The place has been successfully submitted!")
   end
 end
