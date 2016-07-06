@@ -14,3 +14,7 @@ post("/places") do
   place.save()
   erb(:places)
 end
+
+get("/places") do
+  erb(:places)
+end
